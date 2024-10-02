@@ -1,0 +1,39 @@
+### GET request to example server
+GET http://localhost:8080/books
+Content-Type: application/json
+Accept: application/v1+json
+
+###
+
+GET http://localhost:8080/books/1
+Content-Type: application/json
+API-VERSION:1
+
+###
+
+POST http://localhost:8080/books?v=2
+Content-Type: application/json
+
+{
+"id":3,
+"title":"Many Trees",
+"author":"Mrs. Jone",
+"price" : 10.11
+}
+
+###
+
+PUT http://localhost:8080/books/2
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title":"Many Trees",
+  "author":"Mrs. Jone",
+  "price" : 15.15
+}
+
+###
+
+DELETE http://localhost:8080/books/1
+Content-Type: application/json
